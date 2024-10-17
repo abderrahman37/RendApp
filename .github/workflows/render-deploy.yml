@@ -27,7 +27,7 @@ jobs:
       - name: Deploy to Render
         run: |
           curl -X POST \
-            -H "Authorization: Bearer ${{ secrets.rnd_VzI8rx9RdwVQdxV4M50fET6ITWqT }}" \
+            -H "Authorization: Bearer ${{ secrets.rnd_l4bLXD3Mo8LkcpdgZj9YmSbpYL2o }}" \
             -H "Accept: application/json" \
             -H "Content-Type: application/json" \
             --data '{"serviceId": "${{ secrets.srv-cs81t2dds78s7391d8r0?key=7-nCR4NrwNc }}"}' \
