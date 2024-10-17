@@ -4,7 +4,7 @@ name: CI/CD for Flask App on Render
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   deploy:
