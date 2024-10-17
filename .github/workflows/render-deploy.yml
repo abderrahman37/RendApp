@@ -27,8 +27,8 @@ jobs:
       - name: Deploy to Render
         run: |
           curl -X POST \
-            -H "Authorization: Bearer ${{ secrets.RENDER_API_KEY }}" \
+            -H "Authorization: Bearer ${{ secrets.rnd_VzI8rx9RdwVQdxV4M50fET6ITWqT }}" \
             -H "Accept: application/json" \
             -H "Content-Type: application/json" \
-            --data '{"serviceId": "${{ secrets.RENDER_SERVICE_ID }}"}' \
-            https://api.render.com/v1/services/${{ secrets.RENDER_SERVICE_ID }}/deploys
+            --data '{"serviceId": "${{ secrets.srv-cs81t2dds78s7391d8r0?key=7-nCR4NrwNc }}"}' \
+            https://api.render.com/v1/services/${{ secrets.srv-cs81t2dds78s7391d8r0?key=7-nCR4NrwNc }}/deploys
