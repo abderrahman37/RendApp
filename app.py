@@ -1,5 +1,5 @@
 from flask import Flask, render_template_string, url_for
-
+import os 
 app = Flask(__name__)
 
 @app.route('/')
@@ -51,7 +51,7 @@ def birthday_message():
         <img src="{{ url_for('static', filename='birthday_image.jpg') }}" alt="Birthday Image">
         <!-- Display birthday messages -->
         <h1>HAPPY BIRTHDAY MY DIAMANDA</h1>
-        <h2>You're the most beautiful, kindest best girlfriend ever. I lOVE YOU SO MUCH !</h2>
+        <h2>You're the most beautiful, kindest best girlfriend ever. I LOVE YOU SO MUCH!</h2>
     </body>
     </html>
     '''
@@ -59,5 +59,7 @@ def birthday_message():
 
 if __name__ == '__main__':
     app.run(debug=True)
-port = int(os.environ.get("PORT", 5000))
-app.run(host="0.0.0.0", port=port)
+
+app.run(host='0.0.0.0', port=5000, debug=True)
+
+
