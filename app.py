@@ -1,5 +1,5 @@
 from flask import Flask, render_template_string, url_for
-import os 
+
 app = Flask(__name__)
 
 @app.route('/')
@@ -11,7 +11,7 @@ def birthday_message():
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Birthday Message</title>
+        <title>Message l 3azwa</title>
         <style>
             body {
                 display: flex;
@@ -32,7 +32,7 @@ def birthday_message():
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             }
             h1, h2 {
-                color: #FF69B4;
+                color: #000000;
                 margin-top: 20px;
             }
             h1 {
@@ -41,24 +41,24 @@ def birthday_message():
             h2 {
                 font-size: 1.5em;
                 font-weight: normal;
-                color: #FF69B4;
+                color: #000000;
                 margin-top: 10px;
             }
         </style>
     </head>
     <body>
         <!-- Display image -->
-        <img src="{{ url_for('static', filename='birthday_image.jpg') }}" alt="Birthday Image">
+        <img src="{{ url_for('static', filename='mehdi.jpeg') }}" alt="Birthday Image">
         <!-- Display birthday messages -->
-        <h1>HAPPY BIRTHDAY MY DIAMANDA</h1>
-        <h2>You're the most beautiful, kindest best girlfriend ever. I LOVE YOU SO MUCH!</h2>
+        <h1>SALAM AAAAZIIIII</h1>
+        <h2>SIR T9RA YA L KWISIL</h2>
     </body>
     </html>
     '''
     return render_template_string(html)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000 , debug=True)
+    app.run(debug=True)
     
 
 
